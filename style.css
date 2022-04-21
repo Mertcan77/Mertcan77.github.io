@@ -1,0 +1,618 @@
+
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: 'Roboto';
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+}
+.wrap {
+    overflow-x: hidden;
+    font-family: 'Nunito';
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 42pt;
+}
+body {
+    color: aliceblue;
+}
+
+
+
+.section1 {
+   height: 100vh;
+   width: 100vw;
+   background-color: #290628; 
+}
+.giris h1 {
+    padding-bottom: 100px;
+    font-size: 42pt;
+}   
+.giris {
+    width: 18%;
+    position: relative;
+    top: -20%;
+    left: 10%;
+    font-size: 28pt;
+    
+}
+.giris p {
+    width: 180%;
+    color: aliceblue;
+}
+.foto {
+    width: auto;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    border-radius: 50%;
+    left: 65%;
+}
+
+.hakkımda-section {
+    height: 100vh;
+    width: 100vw; 
+   
+    background-color: #2D2D34;
+ }
+
+ .yetenek {
+    height: 100vh;
+    width: 100vw; 
+    background-color: #040303;
+ }
+ .contact {
+    height: 100vh;
+    width: 100vw; 
+    background-color: #390040;
+    padding-top: 8em;
+ }
+
+ .hakkımda {
+     width: 20em;
+     position: relative;
+     align-items: center;
+     height: 20em;
+     text-align: center;
+     padding-top: 5%;
+     padding-left: 10%;
+    left: 60em;
+ }
+
+ .hakkımda p {
+     font-size: 20pt;
+     padding-top: 5%;
+ }
+.egitim-div {
+    position: relative;
+    height: 20em;
+    width: 20em;
+    left: 12em;  
+    top: 10%;
+    align-items: center;
+}
+.ad{
+    font-size: 25pt;
+    color: rgb(0, 255, 64);
+}
+.soyad {
+    font-size: 25pt;
+    color: rgb(0, 255, 64);
+}
+
+.egitim-div ul {
+   list-style-type: upper-roman;
+   padding-top: 1em;
+}
+.egitim-div li {
+    padding-top: 1em;
+    font-size: 16pt;
+    list-style: none;
+    text-align: center;
+}
+.yeteneklerim{
+    padding-top: 30%;
+    padding-left: 10%;
+}
+.yeteneklerim li {
+    list-style: none    ;
+}
+
+footer {
+    width: 100vw;
+    height: 3em;
+    align-items: center;    
+    align-content: space-between;
+    background-color: rgb(19, 18, 18);
+    color: aliceblue;
+}
+footer p{
+    position: relative;
+    top: 1em;
+}
+footer i {
+    position: relative;
+    left: 45%;
+    text-decoration: none;
+}
+
+footer i:hover{
+    color: #3498db;
+    cursor: pointer;
+}
+
+
+.yeteneklerim li{
+    padding-top: 1em;
+    font-size: 16pt;
+
+}
+.projelerim {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    left: 70%;
+    bottom: 62%
+}
+
+
+
+
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+button{
+    width:200px;
+    height:70px;
+    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+.container{
+    left: -3%;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+
+.repos{
+    position: relative;
+    left: -3em;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  form {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px;
+    background: white;
+    text-align: center;
+  }
+  
+  input {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px dashed lightblue;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Economica', 'Arial', sans-serif;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+  
+  input:focus { border-color: deepskyblue; }
+  
+  button {
+    position: absolute;
+    left: calc(50% - 150px / 2);
+    bottom: calc(- 50px / 2);
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Economica', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background: mediumblue;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover { background: midnightblue; }
+  
+  button.valid,
+  button.valid:hover { background: mediumseagreen; }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  svg path {
+    stroke-width: 10px;
+    stroke: mediumseagreen;
+    fill: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  svg path.hidden { opacity: 0; }
+  
+  svg path.animate { animation: drawBorder 1s linear; }
+  
+  @keyframes drawBorder {
+    from {
+      stroke-dasharray: 4000;
+      stroke-dashoffset: 4000;
+    }
+    
+    to {
+      stroke-dasharray: 4000;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    color: black
+  }
+
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00BAF0;
+    background: linear-gradient(to left, #0289e4, #1201ac);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    filter: drop-shadow(12px 12px 16px black);
+    z-index: 100;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+  }
+  .menu li {
+      padding-left: 5em;
+      color: aliceblue;
+      z-index: 100;
+  }
+  .menu > li {
+    margin: 0 1rem;
+    z-index: 100;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    z-index: 100;
+  }
+  
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+    z-index: 100;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+    z-index: 100;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+ 
+
+@media screen and (max-width: 580px) {
+    .wrap {
+        overflow-x:  hidden;
+    }
+    footer {
+        overflow-x: hidden;
+    }
+    
+  .top-nav{
+      z-index: 100;
+  }
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .section1{
+      height: 180vh;
+  }
+  .giris{
+      top: 25%;
+  }
+  .hakkımda {
+      left: 2%;
+      top: -8%;
+  }
+  .egitim-div{
+      top: 5%;
+  }
+  .foto {
+      height: auto;
+      width: 70%;
+      top: 20%;
+      left: 10%;
+      
+  }
+  .me {
+      top: 50%;
+      left: 7%;
+      width: 10em;
+  }
+  .me h1 {
+      font-size: 35pt;
+  }
+  .me p {
+      width: 13em;
+      font-size: 19pt;
+  }
+  .menu-button-container {
+    display: flex;
+    z-index: 100;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .projelerim{
+      left: 25%;
+      top: 15%;
+  }
+  .egitim-div{
+      left: 10%;
+      top: 5%;
+  }
+  .hakkımda{
+      padding-top: 30%;
+  }
+ 
+  .egitim-div h2 {
+      position: relative;
+      left: 23%;;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    display: none;
+    z-index: 100;
+  }
+  .container {
+      left: -3em;
+  }
+
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    background: linear-gradient(to left, #0289e4, #003cff);
+    display: block;
+    width: 95vw;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    top: 1em;
+    left: 6%;
+    z-index: 200;
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+    z-index: 100;
+  }
+
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+    z-index: 100;
+  }
+  footer p{
+      padding-left: 2%;
+      font-size: 10pt;
+      top: 30%; 
+  }
+  footer i{
+      left: 75%;
+      bottom: 5%;
+  }
+}
